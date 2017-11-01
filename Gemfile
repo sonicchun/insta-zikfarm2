@@ -5,6 +5,7 @@ gem 'carrierwave' # image 업로드
 gem 'figaro' # key 관리 
 gem 'mini_magick' # image 편집 (image magick)
 gem 'bootstrap'
+gem 'devise' #login 기능
 
 # sudo apt-get update
 # sudo apt-get install imagemagick

@@ -1,7 +1,13 @@
+<% if current_user == @post.user %>
+
 <%= link_to( "Edit", edit_post_path(@post) ) %>
+<%= link_to( "Delete", @post, method: :delete ) %>
+<% end %>
 
 <div>
-  <%= @post.content %>
+  <p>
+    <%= @post.user.email %><br>
+    <%= @post.content %>
+  </p>
 </div>
 
-<%= link_to( "Delete", @post, method: :delete ) %>
